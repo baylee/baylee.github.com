@@ -1,0 +1,50 @@
+
+html{
+	background: url('../images/sam_hallway.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+body {
+	color: #fff;
+	font-size: 16px;
+	font-family: "Lucida Grande";
+}
+
+#container {
+	width: 420px;
+	overflow: hidden;
+	position: relative;
+	float: right;
+	margin: 15px;
+}
+
+.transparency {
+	background: #000;
+	opacity: 0.4;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+}
+
+.content{
+	position: relative;
+	padding: 15px;
+}
+
+h1 {
+	font-family: Courier New;
+	font-size: 80px;
+	margin: 0px;
+}
+
+h2 {
+	background: #660000;
+	padding: 5px;
+	color: #fff;
+	border-radius: 5px;
+}
+
+
+a {
+	color: #fff;
+}
