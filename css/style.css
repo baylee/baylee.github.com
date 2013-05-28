@@ -1,6 +1,6 @@
 
 html{
-	background: url('../images/sam_hallway.jpg') no-repeat center center fixed;
+	background: url(../images/baylee_bb.jpg) no-repeat center center fixed;
 	background-size: cover;
 }
 
@@ -14,13 +14,12 @@ body {
 	width: 420px;
 	overflow: hidden;
 	position: relative;
-	float: right;
 	margin: 15px;
 }
 
 .transparency {
 	background: #000;
-	opacity: 0.4;
+	opacity: 0.7;
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -47,4 +46,35 @@ h2 {
 
 a {
 	color: #fff;
+}
+
+#social {
+	margin-top: 30px;
+}
+#social .icons a {
+	display: inline-block;
+	height: 24px;
+	width: 24px;
+	margin: 10px 5px 0 0;
+	text-indent:-9999px;
+}
+
+#social .linkedin {
+	background: url(../images/social-icons/linkedin.png);
+}
+#social .facebook {
+	background: url(../images/social-icons/facebook.png);
+}
+#social .tumblr {
+	background: url(../images/social-icons/tumblr.png);
+}
+#social .github {
+	background: url(../images/social-icons/github.png);
+}
+#social .email {
+	background: url(../images/social-icons/email.png);
+}
+
+#social .icons a:hover {
+	background-position: 0 -34px;
 }
