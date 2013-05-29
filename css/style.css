@@ -1,25 +1,43 @@
 
-html{
-	background: url(../images/baylee_bb.jpg) no-repeat center center fixed;
-	background-size: cover;
-}
-
 body {
 	color: #fff;
 	font-size: 16px;
-	font-family: "Lucida Grande";
+	font-family: "Lucida Grande", sans-serif;
+}
+.bg_photo {
+	background: url(../images/baylee_bb.jpg) no-repeat center center fixed;
+	background-size: cover;	
 }
 
+#header {
+	margin: 15px 15px 0 15px;
+}
+#header nav {
+	width: 50%;
+	float: left;
+}
+#header nav a {
+	padding-right: 5px;
+	text-decoration: none;
+	color: #418ea6;
+	font-size: 18px;
+}
+#header nav a:hover {
+	color: #474747;
+}
+#header #social {
+	float:right;
+}
 #container {
-	width: 420px;
+	width: 33%;
 	overflow: hidden;
 	position: relative;
-	margin: 15px;
+	margin-left: 15px;
 }
 
 .transparency {
 	background: #000;
-	opacity: 0.7;
+	opacity: 0.8;
 	position: absolute;
 	height: 100%;
 	width: 100%;
@@ -31,7 +49,7 @@ body {
 }
 
 h1 {
-	font-family: Courier New;
+	font-family: "Courier New", sans-serif;
 	font-size: 80px;
 	margin: 0px;
 }
@@ -49,13 +67,14 @@ a {
 }
 
 #social {
-	margin-top: 30px;
+	float: right;
+	margin: 10px;
 }
 #social .icons a {
 	display: inline-block;
 	height: 24px;
 	width: 24px;
-	margin: 10px 5px 0 0;
+	margin: 0 5px 0 0;
 	text-indent:-9999px;
 }
 
@@ -80,4 +99,15 @@ a {
 
 #social .icons a:hover {
 	background-position: 0 -34px;
+}
+
+.group:before, .group:after { 
+	content: "";
+	display: table; 
+}
+.group:after {
+	clear: both; 
+}
+.group {
+	zoom: 1; /* IE6&7 */ 
 }
