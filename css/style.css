@@ -6,28 +6,41 @@ body {
 }
 .bg_photo {
 	background: url(../images/baylee_bb.jpg) no-repeat center center fixed;
-	background-size: cover;	
+	background-size: cover;
 }
-
-#header {
-	margin: 15px 15px 0 15px;
+ul{
+	padding-left: 5px;
+	display:inline;
 }
-#header nav {
+li{
+	display:inline;
+	margin-left: 10px;
+}
+header {
+	margin: 15px;
+	overflow: hidden;
+	color: #418ea6;
+	font-size: 20px;
+}
+header ul:before {
+	content: '{';
+}
+header ul:after {
+	content: '}';
+}
+header nav {
 	width: 50%;
 	float: left;
 }
-#header nav a {
+header nav a {
 	padding-right: 5px;
 	text-decoration: none;
 	color: #418ea6;
 	font-family: Nunito, sans-serif;
-	font-size: 18px;
+	font-size: 20px;
 }
-#header nav a:hover {
+header nav a:hover {
 	color: #474747;
-}
-#header #social {
-	float:right;
 }
 #container {
 	width: 33%;
@@ -38,6 +51,7 @@ body {
 
 .transparency {
 	background: #000;
+	overflow: hidden;
 	opacity: 0.8;
 	position: absolute;
 	height: 100%;
@@ -68,8 +82,7 @@ a {
 }
 
 #social {
-	float: right;
-	margin: 10px;
+	margin: 30px 0;
 }
 #social .icons a {
 	display: inline-block;
@@ -100,15 +113,4 @@ a {
 
 #social .icons a:hover {
 	background-position: 0 -34px;
-}
-
-.group:before, .group:after { 
-	content: "";
-	display: table; 
-}
-.group:after {
-	clear: both; 
-}
-.group {
-	zoom: 1; /* IE6&7 */ 
 }
